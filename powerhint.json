@@ -115,9 +115,10 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
-        "15",
-        "1"
+        "1",
+        "5"
       ],
+      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -275,6 +276,12 @@
       "Value": "950000000"
     },
     {
+      "PowerHint": "SUSTAINED_PERFORMANCE",
+      "Node": "TASchedtuneBoost",
+      "Duration": 0,
+      "Value": "5"
+    },
+    {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
@@ -290,7 +297,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 0,
-      "Value": "15"
+      "Value": "5"
     },
     {
       "PowerHint": "INTERACTION",
