@@ -25,3 +25,4 @@ ro.launcher.blur.appLaunch=0
 debug.cpurend.vsync=false
 debug.hwui.renderer=skiagl
 debug.sf.enable_gl_backpressure=1
+debug.hwui.skia_atrace_enabled=false
