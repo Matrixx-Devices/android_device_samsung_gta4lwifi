@@ -175,6 +175,24 @@
       "ResetOnInit": true
     },
     {
+      "Name": "DDRLittleClusterMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-ddr-lat/min_freq",
+      "Values": [
+        "13763",
+        "1525"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "DDRBigClusterMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu4-cpu-ddr-lat/min_freq",
+      "Values": [
+        "13763",
+        "1525"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "L3LittleClusterMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/min_freq",
       "Values": [
@@ -352,6 +370,18 @@
       "Node": "CPUBWMinFreq",
       "Duration": 5000,
       "Value": "14236"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "DDRLittleClusterMinFreq",
+      "Duration": 5000,
+      "Value": "13763"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "DDRBigClusterMinFreq",
+      "Duration": 5000,
+      "Value": "13763"
     },
     {
       "PowerHint": "LAUNCH",
