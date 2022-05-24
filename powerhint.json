@@ -213,15 +213,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "L3BigClusterMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu4-cpu-l3-lat/min_freq",
-      "Values": [
-        "1440000000",
-        "300000000"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PMQoSCpuDmaLatency",
       "Path": "/dev/cpu_dma_latency",
       "Values": [
@@ -402,12 +393,6 @@
       "Node": "DDRBigClusterMinFreq",
       "Duration": 5000,
       "Value": "13763"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "L3BigClusterMinFreq",
-      "Duration": 5000,
-      "Value": "1440000000"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
