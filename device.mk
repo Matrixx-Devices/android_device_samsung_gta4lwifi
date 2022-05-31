@@ -142,6 +142,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SettingsGoogle \
     SystemUIGoogle
 
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.gta4lwifi.rc
