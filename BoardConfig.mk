@@ -229,7 +229,7 @@ BOARD_ROOT_EXTRA_SYMLINKS += /vendor/bt_firmware:/bt_firmware
 VENDOR_SECURITY_PATCH := 2023-08-01
 
 # SELinux
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
