@@ -68,7 +68,9 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndmonitor \
-    libspkrprot
+    libspkrprot \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
