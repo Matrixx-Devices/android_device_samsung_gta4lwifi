@@ -249,6 +249,9 @@
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">false</bool>
 
+    <!-- Should the pinner service pin the Camera application? -->
+    <bool name="config_pinnerCameraApp">false</bool>
+
     <!-- Pocket Lock -->
     <bool name="config_pocketModeSupported">false</bool>
 </resources>
