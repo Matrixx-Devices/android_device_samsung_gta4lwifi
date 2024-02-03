@@ -80,6 +80,9 @@ TARGET_BOOTLOADER_BOARD_NAME := bengal
 TARGET_BOARD_NAME := P85943DA1
 TARGET_BOOTIMAGE_BOARD_NAME := SRPTC24A006
 
+# Camera
+$(call soong_config_set,samsungCameraVars,needs_sec_reserved_field,true)
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -90,9 +93,6 @@ endif
 
 # Display
 TARGET_SCREEN_DENSITY := 240
-
-# Jemalloc
-MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Graphics
 TARGET_USES_GRALLOC1 := true
@@ -115,7 +115,6 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x4a90
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=2048 loop.max_part=7 firmware_class.path=/vendor/firmware_mnt/image
-BOARD_KERNEL_CMDLINE += cgroup_disable=pressure
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -228,7 +227,8 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_HAS_DOWNLOAD_MODE := true
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_DOWN
+TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
+TARGET_RECOVERY_DEFAULT_TOUCH_ROTATION := ROTATION_RIGHT
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.emmc
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
