@@ -106,6 +106,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HWUI
+TARGET_USES_VULKAN := true
 HWUI_COMPILE_FOR_PERF := true
 
 # Kernel
