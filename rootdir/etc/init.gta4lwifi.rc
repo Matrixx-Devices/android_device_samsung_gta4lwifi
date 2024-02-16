@@ -34,6 +34,10 @@ on init
 on boot
    # SSWAP
    write /proc/sys/vm/swappiness 160
+   #!/system/bin/sh
+   write /dev/watchdog1 V
+   write /dev/watchdog0 V
+   write /dev/watchdog V
 
 on property:ro.boot.em.model=*
     mount none /vendor/firmware/wlanmdsp_${ro.boot.em.model}.mbn /vendor/firmware/wlanmdsp.mbn bind
