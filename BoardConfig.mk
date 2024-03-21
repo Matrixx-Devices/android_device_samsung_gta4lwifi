@@ -132,6 +132,15 @@ TARGET_KERNEL_SOURCE := kernel/samsung/gta4l
 TARGET_KERNEL_CONFIG := gta4l_eur_open_defconfig
 BOARD_MKBOOTIMG_ARGS += --board $(TARGET_BOOTIMAGE_BOARD_NAME)
 
+# Proton Clang
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
+KERNEL_SUPPORTS_LLVM_TOOLS := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    LLVM=1 \
+    LLVM_IAS=1
+
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
 

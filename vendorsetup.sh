@@ -2,6 +2,7 @@
 git clone --depth=1 https://github.com/Matrixx-Devices/android_vendor_samsung_gta4lwifi vendor/samsung/gta4lwifi
 
 # Cloning necessary repository
+git clone --depth=1 https://github.com/kdrag0n/proton-clang.git prebuilts/clang/host/linux-x86/proton-clang
 git clone --depth=1 https://github.com/Matrixx-Devices/android_hardware_samsung hardware/tmp
 cp -r hardware/tmp/* hardware/samsung/
 rm -rf hardware/tmp
