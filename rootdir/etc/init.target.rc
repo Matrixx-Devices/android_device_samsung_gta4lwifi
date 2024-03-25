@@ -161,3 +161,6 @@ service vendor.wt_rpmb_status /vendor/bin/wt_rpmb_status
 	user system
 	group system
 	oneshot
+
+# Disable statsd service to prevent additional battery drain
+    stop statsd
