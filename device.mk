@@ -26,9 +26,6 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
-# Enable project quotas and casefolding for emulated storage without sdcardfs
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
