@@ -4,6 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <string name="menu_changelog_url" translatable="false">https://matrixx-devices.github.io/samsung/gta4lwifi.html</string>
+    <string name="menu_changelog_url" translatable="false">https://www.projectmatrixx.org/downloads/gta4lwifi</string>
     
 </resources>
