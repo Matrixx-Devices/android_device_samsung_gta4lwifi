@@ -142,9 +142,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
-# Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
-
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
