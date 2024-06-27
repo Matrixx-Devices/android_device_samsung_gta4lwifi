@@ -26,7 +26,7 @@ TARGET_BOARD_PLATFORM := bengal
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gta4l
+TARGET_OTA_ASSERT_DEVICE := gta4lwifi
 
 # Architecture
 TARGET_ARCH := arm64
